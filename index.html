@@ -21,14 +21,14 @@
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#proceso">Proceso</a></li>
                         <li><a href="#productos">Productos</a></li>
-                        <li><a href="#testimonios">Testimonios</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header-actions">
                     <div class="search-box">
-                        <input type="text" placeholder="Buscar velas...">
+                        <input type="text" placeholder="Buscar velas..." id="searchInput">
                         <i class="fas fa-search"></i>
                     </div>
                     <div class="cart-icon" id="cartIcon">
@@ -64,11 +64,11 @@
         <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Velas Artesanales que Transforman Espacios</h1>
-                <p>Descubre nuestra exclusiva colección de velas elaboradas con ingredientes naturales, aceites esenciales puros y aromas cautivadores que elevan tus sentidos</p>
+                <h1>Velas Artesanales que Iluminan Momentos Especiales</h1>
+                <p>Descubre nuestra colección exclusiva de velas elaboradas con cera natural, aceites esenciales puros y aromas cautivadores que transforman tus espacios</p>
                 <div class="hero-buttons">
-                    <a href="#productos" class="btn btn-primary">Explorar Productos</a>
-                    <a href="#nosotros" class="btn btn-secondary">Conoce Más</a>
+                    <a href="#productos" class="btn btn-primary">Explorar Colección</a>
+                    <a href="#proceso" class="btn btn-secondary">Ver Proceso</a>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Nuestra Pasión por la Artesanía</h2>
+                    <h2>Nuestra Esencia</h2>
                     <p>En <strong>PrettyCandles</strong> creamos velas artesanales con los mejores ingredientes naturales, cuidando cada detalle para ofrecerte productos únicos que transforman tus espacios. Cada vela es elaborada con cera de soja natural, aceites esenciales puros y mechas de algodón, garantizando una experiencia aromática excepcional y una combustión limpia.</p>
                     <p>Nuestro proceso artesanal combina técnicas tradicionales con diseños modernos, creando piezas que no solo iluminan, sino que también embellecen cualquier ambiente. Desde velas decorativas hasta aromas terapéuticos, cada producto está pensado para brindarte momentos de tranquilidad y bienestar.</p>
                     <div class="about-features">
@@ -102,8 +102,54 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://i0.wp.com/www.hacervelas.es/wp-content/uploads/2016/11/velas-decoradas-con-sal-paso-a-paso.jpg?resize=848,841&ssl=1" alt="Proceso artesanal de velas">
+                    <img src="https://images.unsplash.com/photo-1606800052052-a08afb5c91f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Proceso artesanal de velas">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="proceso">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Proceso Artesanal</h2>
+                <p>Descubre cómo creamos cada vela con dedicación y atención al detalle</p>
+            </div>
+            <div class="process-videos">
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Preparación de materiales naturales</p>
+                    </div>
+                    <p class="video-description">Seleccionamos cuidadosamente cada ingrediente para garantizar la máxima calidad</p>
+                </div>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Fundido y mezcla de ceras</p>
+                    </div>
+                    <p class="video-description">Proceso controlado de temperatura para preservar las propiedades naturales</p>
+                </div>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Adición de aceites esenciales</p>
+                    </div>
+                    <p class="video-description">Incorporamos aromas puros en el momento perfecto para intensidad duradera</p>
+                </div>
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Vaciado y solidificación</p>
+                    </div>
+                    <p class="video-description">Cada vela reposa el tiempo necesario para lograr la textura perfecta</p>
+                </div>
+            </div>
+            <div class="process-cta">
+                <p>¿Te gustaría ver nuestro proceso completo?</p>
+                <a href="https://youtube.com" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-youtube"></i> Ver Canal de YouTube
+                </a>
             </div>
         </div>
     </section>
@@ -115,59 +161,59 @@
                 <h2>Nuestra Colección Exclusiva</h2>
                 <p>Descubre nuestras velas artesanales, cada una con su propia personalidad y aroma único</p>
             </div>
+
+            <!-- Filtros de Productos -->
+            <div class="filters-section">
+                <div class="filter-group">
+                    <h4>Filtrar por:</h4>
+                    <div class="filter-options">
+                        <div class="filter">
+                            <label for="colorFilter">Color:</label>
+                            <select id="colorFilter">
+                                <option value="all">Todos los colores</option>
+                                <option value="Rosa pálido">Rosa pálido</option>
+                                <option value="Blanco hueso">Blanco hueso</option>
+                                <option value="Lila suave">Lila suave</option>
+                                <option value="Beige">Beige</option>
+                                <option value="Crema">Crema</option>
+                            </select>
+                        </div>
+                        <div class="filter">
+                            <label for="scentFilter">Aroma:</label>
+                            <select id="scentFilter">
+                                <option value="all">Todos los aromas</option>
+                                <option value="Lavanda">Lavanda</option>
+                                <option value="Cítrico">Cítrico</option>
+                                <option value="Madera">Madera</option>
+                                <option value="Floral">Floral</option>
+                                <option value="Vainilla">Vainilla</option>
+                            </select>
+                        </div>
+                        <div class="filter">
+                            <label for="priceFilter">Precio:</label>
+                            <select id="priceFilter">
+                                <option value="all">Todos los precios</option>
+                                <option value="0-20">Menos de $20</option>
+                                <option value="20-25">$20 - $25</option>
+                                <option value="25-30">Más de $25</option>
+                            </select>
+                        </div>
+                        <div class="filter">
+                            <label for="weightFilter">Peso:</label>
+                            <select id="weightFilter">
+                                <option value="all">Todos los pesos</option>
+                                <option value="0-200">Menos de 200g</option>
+                                <option value="200-250">200g - 250g</option>
+                                <option value="250-300">Más de 250g</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" id="clearFilters">Limpiar Filtros</button>
+                </div>
+            </div>
+
             <div class="products-grid" id="productsGrid">
                 <!-- Los productos se cargarán dinámicamente con JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonios">
-        <div class="container">
-            <div class="section-header">
-                <h2>Lo que Nuestros Clientes Dicen</h2>
-                <p>Experiencias reales de quienes han transformado sus espacios con PrettyCandles</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>Las velas de PrettyCandles han transformado completamente mi hogar. El aroma de lavanda y vainilla es simplemente celestial.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="María González">
-                        <div>
-                            <h4>María González</h4>
-                            <span>Cliente desde 2022</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>La calidad de las velas es excepcional. Quedé impresionada con los materiales y lo mucho que duran. ¡Totalmente recomendadas!</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Carlos Rodríguez">
-                        <div>
-                            <h4>Carlos Rodríguez</h4>
-                            <span>Cliente frecuente</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>Compré varias velas como regalo y fueron un éxito absoluto. El empaque es hermoso y los aromas son únicos.</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Ana Martínez">
-                        <div>
-                            <h4>Ana Martínez</h4>
-                            <span>Cliente satisfecha</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -213,8 +259,8 @@
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#proceso">Proceso Artesanal</a></li>
                         <li><a href="#productos">Productos</a></li>
-                        <li><a href="#testimonios">Testimonios</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
