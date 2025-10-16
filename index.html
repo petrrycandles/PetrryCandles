@@ -51,7 +51,7 @@
                 <!-- Los productos del carrito se agregarán aquí dinámicamente -->
             </div>
             <div class="cart-total">
-                <p>Total: $<span id="cartTotal">0.00</span></p>
+                <p>Total: $<span id="cartTotal">0</span> COP</p>
                 <button class="btn checkout-btn" id="checkoutBtn">
                     <i class="fab fa-whatsapp"></i> Finalizar Compra por WhatsApp
                 </button>
@@ -64,10 +64,10 @@
         <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
-                <h1>Velas Artesanales que Iluminan Momentos Especiales</h1>
-                <p>Descubre nuestra colección exclusiva de velas elaboradas con cera natural, aceites esenciales puros y aromas cautivadores que transforman tus espacios</p>
+                <h1>Crea la Vela Perfecta para Tu Espacio</h1>
+                <p>Diseña tu vela personalizada: elige el color, el aroma y crea una experiencia única que se adapte a tu estilo</p>
                 <div class="hero-buttons">
-                    <a href="#productos" class="btn btn-primary">Explorar Colección</a>
+                    <a href="#productos" class="btn btn-primary">Personalizar Ahora</a>
                     <a href="#proceso" class="btn btn-secondary">Ver Proceso</a>
                 </div>
             </div>
@@ -79,137 +79,40 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Nuestra Esencia</h2>
-                    <p>En <strong>PrettyCandles</strong> creamos velas artesanales con los mejores ingredientes naturales, cuidando cada detalle para ofrecerte productos únicos que transforman tus espacios. Cada vela es elaborada con cera de soja natural, aceites esenciales puros y mechas de algodón, garantizando una experiencia aromática excepcional y una combustión limpia.</p>
-                    <p>Nuestro proceso artesanal combina técnicas tradicionales con diseños modernos, creando piezas que no solo iluminan, sino que también embellecen cualquier ambiente. Desde velas decorativas hasta aromas terapéuticos, cada producto está pensado para brindarte momentos de tranquilidad y bienestar.</p>
+                    <h2>Tu Vela, Tu Estilo</h2>
+                    <p>En <strong>PrettyCandles</strong> creemos que cada vela debe ser tan única como tú. Por eso te ofrecemos la posibilidad de personalizar completamente tu vela: desde el color hasta el aroma, creando una pieza perfecta para tu espacio.</p>
+                    <p>Selecciona entre nuestra amplia gama de colores suaves y aromas premium. Cada vela es elaborada artesanalmente con cera de soja natural, aceites esenciales puros y mechas de algodón, garantizando una experiencia aromática excepcional.</p>
                     <div class="about-features">
                         <div class="feature">
-                            <i class="fas fa-leaf"></i>
-                            <span>100% Natural</span>
+                            <i class="fas fa-palette"></i>
+                            <span>Colores Personalizados</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wind"></i>
+                            <span>Aromas Exclusivos</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-hand-sparkles"></i>
                             <span>Hecho a Mano</span>
                         </div>
                         <div class="feature">
-                            <i class="fas fa-wind"></i>
-                            <span>Aromas Puros</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-recycle"></i>
-                            <span>Eco-Friendly</span>
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Natural</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1606800052052-a08afb5c91f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Proceso artesanal de velas">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Proceso artesanal de velas">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Process Section -->
-    <section class="process" id="proceso">
-        <div class="container">
-            <div class="section-header">
-                <h2>Nuestro Proceso Artesanal</h2>
-                <p>Descubre cómo creamos cada vela con dedicación y atención al detalle</p>
-            </div>
-            <div class="process-videos">
-                <div class="video-container">
-                    <div class="video-placeholder">
-                        <i class="fas fa-play-circle"></i>
-                        <p>Preparación de materiales naturales</p>
-                    </div>
-                    <p class="video-description">Seleccionamos cuidadosamente cada ingrediente para garantizar la máxima calidad</p>
-                </div>
-                <div class="video-container">
-                    <div class="video-placeholder">
-                        <i class="fas fa-play-circle"></i>
-                        <p>Fundido y mezcla de ceras</p>
-                    </div>
-                    <p class="video-description">Proceso controlado de temperatura para preservar las propiedades naturales</p>
-                </div>
-                <div class="video-container">
-                    <div class="video-placeholder">
-                        <i class="fas fa-play-circle"></i>
-                        <p>Adición de aceites esenciales</p>
-                    </div>
-                    <p class="video-description">Incorporamos aromas puros en el momento perfecto para intensidad duradera</p>
-                </div>
-                <div class="video-container">
-                    <div class="video-placeholder">
-                        <i class="fas fa-play-circle"></i>
-                        <p>Vaciado y solidificación</p>
-                    </div>
-                    <p class="video-description">Cada vela reposa el tiempo necesario para lograr la textura perfecta</p>
-                </div>
-            </div>
-            <div class="process-cta">
-                <p>¿Te gustaría ver nuestro proceso completo?</p>
-                <a href="https://youtube.com" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-youtube"></i> Ver Canal de YouTube
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- Products Section -->
     <section id="productos">
         <div class="container">
             <div class="section-header">
-                <h2>Nuestra Colección Exclusiva</h2>
-                <p>Descubre nuestras velas artesanales, cada una con su propia personalidad y aroma único</p>
-            </div>
-
-            <!-- Filtros de Productos -->
-            <div class="filters-section">
-                <div class="filter-group">
-                    <h4>Filtrar por:</h4>
-                    <div class="filter-options">
-                        <div class="filter">
-                            <label for="colorFilter">Color:</label>
-                            <select id="colorFilter">
-                                <option value="all">Todos los colores</option>
-                                <option value="Rosa pálido">Rosa pálido</option>
-                                <option value="Blanco hueso">Blanco hueso</option>
-                                <option value="Lila suave">Lila suave</option>
-                                <option value="Beige">Beige</option>
-                                <option value="Crema">Crema</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <label for="scentFilter">Aroma:</label>
-                            <select id="scentFilter">
-                                <option value="all">Todos los aromas</option>
-                                <option value="Lavanda">Lavanda</option>
-                                <option value="Cítrico">Cítrico</option>
-                                <option value="Madera">Madera</option>
-                                <option value="Floral">Floral</option>
-                                <option value="Vainilla">Vainilla</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <label for="priceFilter">Precio:</label>
-                            <select id="priceFilter">
-                                <option value="all">Todos los precios</option>
-                                <option value="0-20">Menos de $20</option>
-                                <option value="20-25">$20 - $25</option>
-                                <option value="25-30">Más de $25</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <label for="weightFilter">Peso:</label>
-                            <select id="weightFilter">
-                                <option value="all">Todos los pesos</option>
-                                <option value="0-200">Menos de 200g</option>
-                                <option value="200-250">200g - 250g</option>
-                                <option value="250-300">Más de 250g</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button class="btn btn-secondary" id="clearFilters">Limpiar Filtros</button>
-                </div>
+                <h2>Personaliza Tu Vela</h2>
+                <p>Selecciona un diseño base y personalízalo a tu gusto</p>
             </div>
 
             <div class="products-grid" id="productsGrid">
@@ -218,12 +121,12 @@
         </div>
     </section>
 
-    <!-- Modal de Detalles del Producto -->
-    <div class="product-modal" id="productModal">
-        <div class="product-modal-content">
-            <span class="close-modal" id="closeModal">&times;</span>
-            <div class="product-modal-body" id="productModalBody">
-                <!-- Los detalles del producto se cargarán aquí -->
+    <!-- Modal de Personalización -->
+    <div class="customization-modal" id="customizationModal">
+        <div class="customization-content">
+            <span class="close-customization" id="closeCustomization">&times;</span>
+            <div class="customization-body" id="customizationBody">
+                <!-- La personalización se cargará aquí -->
             </div>
         </div>
     </div>
@@ -237,7 +140,7 @@
                         <i class="fas fa-candle-holder"></i>
                         PrettyCandles
                     </div>
-                    <p>Transformamos espacios ordinarios en santuarios aromáticos con nuestras velas artesanales de la más alta calidad.</p>
+                    <p>Transformamos espacios ordinarios en santuarios aromáticos con nuestras velas artesanales personalizadas de la más alta calidad.</p>
                     <div class="social-links">
                         <a href="https://facebook.com" target="_blank" class="social-link">
                             <i class="fab fa-facebook-f"></i>
@@ -260,7 +163,7 @@
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#nosotros">Sobre Nosotros</a></li>
                         <li><a href="#proceso">Proceso Artesanal</a></li>
-                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#productos">Personalizar Vela</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -287,7 +190,7 @@
             
             <div class="footer-bottom">
                 <div class="copyright">
-                    &copy; 2023 PrettyCandles. Todos los derechos reservados.
+                    &copy; 2025 PrettyCandles. Todos los derechos reservados.
                 </div>
                 <div class="payment-methods">
                     <i class="fab fa-cc-visa"></i>

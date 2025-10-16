@@ -1,134 +1,120 @@
-// Datos de los productos actualizados con colores suaves
+// Datos de los productos en pesos colombianos
 const products = [
     {
         id: 1,
-        name: "Lavanda y Vainilla",
-        price: 24.99,
-        image: "https://images.unsplash.com/photo-1633389495483-700e39d90b6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        name: "Vela Clásica Redonda",
+        basePrice: 45000,
+        image: "https://images.unsplash.com/photo-1545975076-2b4e4d4fae77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
         weight: "250g",
-        color: "Lila suave",
-        scent: "Lavanda con notas de vainilla",
-        scentCategory: "Lavanda",
-        materials: "Cera de soja 100% natural, aceites esenciales puros, mecha de algodón orgánico",
         burnTime: "40-45 horas",
         dimensions: "8cm x 8cm",
-        description: "Una combinación relajante de lavanda con notas dulces de vainilla que crea una atmósfera de completa tranquilidad. Perfecta para espacios de meditación, dormitorios o para crear un ambiente sereno después de un largo día.",
-        badge: "Más Vendido"
+        description: "Nuestra vela redonda clásica, perfecta para personalizar con tu color y aroma favorito. Elaborada con cera de soja natural que garantiza una combustión limpia y duradera.",
+        badge: "Más Popular"
     },
     {
         id: 2,
-        name: "Rosa Blanca",
-        price: 22.99,
-        image: "https://images.unsplash.com/photo-1600267163998-177115f5d035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        name: "Vela Cubo Elegante",
+        basePrice: 38000,
+        image: "https://images.unsplash.com/photo-1585329063178-9a8dd0adf763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
         weight: "200g",
-        color: "Rosa pálido",
-        scent: "Rosas blancas y jazmín",
-        scentCategory: "Floral",
-        materials: "Cera de soja natural, aceites esenciales florales premium, mecha de algodón",
         burnTime: "35-40 horas",
         dimensions: "7cm x 7cm",
-        description: "Delicada fragancia de rosas blancas combinada con el dulce aroma del jazmín. Ideal para crear un ambiente romántico y elegante en cualquier espacio de tu hogar.",
-        badge: "Romántica"
+        description: "Diseño moderno en forma de cubo, ideal para espacios contemporáneos. Personalízala con los colores y aromas que mejor se adapten a tu decoración.",
+        badge: "Moderno"
     },
     {
         id: 3,
-        name: "Vainilla Bourbon",
-        price: 26.99,
-        image: "https://images.unsplash.com/photo-1585329063178-9a8dd0adf763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        name: "Vela Jarrón Alto",
+        basePrice: 52000,
+        image: "https://images.unsplash.com/photo-1590736968-f8b8b1cac7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
         weight: "300g",
-        color: "Blanco hueso",
-        scent: "Vainilla Bourbon y caramelo",
-        scentCategory: "Vainilla",
-        materials: "Cera de soja premium, aceites esenciales naturales, mecha de algodón",
         burnTime: "50-55 horas",
-        dimensions: "9cm x 9cm",
-        description: "El clásico aroma de vainilla Bourbon con un toque moderno de caramelo crea una experiencia sensorial reconfortante. Perfecta para crear un ambiente acogedor y familiar.",
-        badge: "Clásico"
-    },
-    {
-        id: 4,
-        name: "Jardín de Rosas",
-        price: 25.99,
-        image: "https://images.unsplash.com/photo-1633389495736-4321a9a2d5f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        weight: "250g",
-        color: "Rosa pálido",
-        scent: "Rosas frescas y peonías",
-        scentCategory: "Floral",
-        materials: "Cera de soja natural, aceite esencial de rosas búlgaras, mecha de algodón",
-        burnTime: "40-45 horas",
-        dimensions: "8cm x 8cm",
-        description: "Fragante y romántica, con el delicado aroma de rosas frescas combinado con peonías. Perfecta para momentos especiales o para agregar un toque de elegancia a cualquier espacio.",
+        dimensions: "10cm x 6cm",
+        description: "Elegante vela en forma de jarrón, perfecta como pieza decorativa central. Su diseño alto y estilizado añade sofisticación a cualquier ambiente.",
         badge: "Elegante"
     },
     {
-        id: 5,
-        name: "Vela Cubo Clásica",
-        price: 19.50,
-        image: "https://images.unsplash.com/photo-1545975076-2b4e4d4fae77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        weight: "180g",
-        color: "Beige",
-        scent: "Macadamia y vainilla",
-        scentCategory: "Vainilla",
-        materials: "Cera de soja y parafina natural",
-        burnTime: "40-45 horas",
-        dimensions: "7.5cm x 7.5cm",
-        description: "Diseño clásico en forma de cubo con aroma reconfortante de macadamia y vainilla. Ideal para regalos o para decorar espacios minimalistas.",
-        badge: "Clásico"
-    },
-    {
-        id: 6,
-        name: "Brisa Marina",
-        price: 27.99,
-        image: "https://images.unsplash.com/photo-1590736968-f8b8b1cac7a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        id: 4,
+        name: "Vela Achatada Decorativa",
+        basePrice: 42000,
+        image: "https://images.unsplash.com/photo-1600267163998-177115f5d035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
         weight: "280g",
-        color: "Azul claro",
-        scent: "Brisa marina y algas",
-        scentCategory: "Marino",
-        materials: "Cera de soja, aceites esenciales marinos, mecha de algodón",
         burnTime: "45-50 horas",
-        dimensions: "8.5cm x 8.5cm",
-        description: "Transporta la esencia refrescante del océano a tu hogar con esta vela de aroma a brisa marina. Perfecta para crear un ambiente de pureza y renovación.",
-        badge: "Relajante"
-    },
-    {
-        id: 7,
-        name: "Citrus Delight",
-        price: 23.99,
-        image: "https://images.unsplash.com/photo-1585329063178-9a8dd0adf763?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        weight: "220g",
-        color: "Amarillo pálido",
-        scent: "Naranja, limón y pomelo",
-        scentCategory: "Cítrico",
-        materials: "Cera de soja natural, aceites esenciales cítricos, mecha de algodón",
-        burnTime: "38-42 horas",
-        dimensions: "7cm x 7cm",
-        description: "Mezcla revitalizante de naranja dulce, limón fresco y pomelo vibrante. Ideal para comenzar el día con energía o para revitalizar ambientes.",
-        badge: "Energizante"
-    },
-    {
-        id: 8,
-        name: "Sándalo Noble",
-        price: 29.99,
-        image: "https://images.unsplash.com/photo-1633389495483-700e39d90b6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        weight: "320g",
-        color: "Crema",
-        scent: "Sándalo y pachulí",
-        scentCategory: "Madera",
-        materials: "Cera de soja premium, aceites esenciales de maderas nobles, mecha de algodón",
-        burnTime: "55-60 horas",
-        dimensions: "10cm x 10cm",
-        description: "Aroma terroso y cálido con notas profundas de sándalo y pachulí. Crea un ambiente acogedor y sofisticado, perfecto para momentos de meditación.",
-        badge: "Premium"
+        dimensions: "12cm x 4cm",
+        description: "Vela achatada con amplia superficie, ideal para mostrar colores personalizados. Perfecta para mesas de centro y repisas.",
+        badge: "Decorativa"
     }
 ];
 
-// El resto del código JavaScript permanece igual que en la versión anterior
-// (Variables globales, funciones, event listeners, etc.)
+// Opciones de personalización
+const colorOptions = [
+    { name: "Rosa Pálido", value: "rosa-palido", color: "#f8d7dc" },
+    { name: "Blanco Nieve", value: "blanco-nieve", color: "#f8f8f8" },
+    { name: "Lila Suave", value: "lila-suave", color: "#e6d4f0" },
+    { name: "Azul Cielo", value: "azul-cielo", color: "#d4e8f0" },
+    { name: "Verde Menta", value: "verde-menta", color: "#d4f0e6" },
+    { name: "Beige Natural", value: "beige-natural", color: "#f0e6d4" },
+    { name: "Melocotón", value: "melocoton", color: "#f8dcc7" },
+    { name: "Lavanda", value: "lavanda", color: "#e6d4f0" }
+];
+
+const scentOptions = [
+    { 
+        name: "Lavanda Relajante", 
+        value: "lavanda", 
+        description: "Aroma calmante perfecto para espacios de descanso",
+        price: 5000 
+    },
+    { 
+        name: "Vainilla Comfort", 
+        value: "vainilla", 
+        description: "Dulce y acogedor, ideal para crear ambientes cálidos",
+        price: 4000 
+    },
+    { 
+        name: "Cítricos Energizantes", 
+        value: "citricos", 
+        description: "Mezcla revitalizante de naranja, limón y lima",
+        price: 6000 
+    },
+    { 
+        name: "Jazmín Oriental", 
+        value: "jazmin", 
+        description: "Floral exótico que evoca elegancia y sofisticación",
+        price: 7000 
+    },
+    { 
+        name: "Sándalo Mystic", 
+        value: "sandalwood", 
+        description: "Aroma terroso y cálido para meditación y relax",
+        price: 8000 
+    },
+    { 
+        name: "Rosas Frescas", 
+        value: "rosas", 
+        description: "Fragancia romántica y delicada de rosas naturales",
+        price: 6500 
+    },
+    { 
+        name: "Vainilla y Canela", 
+        value: "vainilla-canela", 
+        description: "Combinación acogedora perfecta para días fríos",
+        price: 5500 
+    },
+    { 
+        name: "Océano Azul", 
+        value: "oceano", 
+        description: "Fresco aroma marino que revitaliza los espacios",
+        price: 6000 
+    }
+];
 
 // Variables globales
 let cart = [];
 let currentProduct = null;
 let currentQuantity = 1;
+let selectedColor = null;
+let selectedScent = null;
 let filteredProducts = [...products];
 
 // Elementos del DOM
@@ -140,15 +126,19 @@ const cartItems = document.getElementById('cartItems');
 const cartTotal = document.getElementById('cartTotal');
 const cartCount = document.getElementById('cartCount');
 const checkoutBtn = document.getElementById('checkoutBtn');
-const productModal = document.getElementById('productModal');
-const closeModal = document.getElementById('closeModal');
-const productModalBody = document.getElementById('productModalBody');
+const customizationModal = document.getElementById('customizationModal');
+const closeCustomization = document.getElementById('closeCustomization');
+const customizationBody = document.getElementById('customizationBody');
 const searchInput = document.getElementById('searchInput');
-const colorFilter = document.getElementById('colorFilter');
-const scentFilter = document.getElementById('scentFilter');
-const priceFilter = document.getElementById('priceFilter');
-const weightFilter = document.getElementById('weightFilter');
-const clearFiltersBtn = document.getElementById('clearFilters');
+
+// Formatear precio en pesos colombianos
+function formatPrice(price) {
+    return new Intl.NumberFormat('es-CO', {
+        style: 'decimal',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+    }).format(price);
+}
 
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
@@ -178,25 +168,25 @@ function loadProducts() {
             </div>
             <div class="product-info">
                 <h3>${product.name}</h3>
-                <p>${product.scent}</p>
+                <p>${product.description.substring(0, 100)}...</p>
                 <div class="product-meta">
                     <span><i class="fas fa-weight-hanging"></i> ${product.weight}</span>
                     <span><i class="fas fa-clock"></i> ${product.burnTime}</span>
                 </div>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
-                <button class="btn btn-primary view-details-btn" data-id="${product.id}">
-                    <i class="fas fa-eye"></i> Ver Detalles
+                <div class="product-price">$${formatPrice(product.basePrice)} COP</div>
+                <button class="btn btn-primary customize-btn" data-id="${product.id}">
+                    <i class="fas fa-magic"></i> Personalizar
                 </button>
             </div>
         `;
         productsGrid.appendChild(productCard);
     });
     
-    // Agregar event listeners a los botones de detalles
-    document.querySelectorAll('.view-details-btn').forEach(button => {
+    // Agregar event listeners a los botones de personalización
+    document.querySelectorAll('.customize-btn').forEach(button => {
         button.addEventListener('click', function() {
             const productId = parseInt(this.getAttribute('data-id'));
-            showProductDetails(productId);
+            showCustomization(productId);
         });
     });
 }
@@ -207,8 +197,8 @@ function setupEventListeners() {
     cartIcon.addEventListener('click', toggleCart);
     closeCart.addEventListener('click', toggleCart);
     
-    // Modal de producto
-    closeModal.addEventListener('click', closeProductModal);
+    // Modal de personalización
+    closeCustomization.addEventListener('click', closeCustomizationModal);
     
     // Finalizar compra
     checkoutBtn.addEventListener('click', checkout);
@@ -216,17 +206,10 @@ function setupEventListeners() {
     // Búsqueda
     searchInput.addEventListener('input', filterProducts);
     
-    // Filtros
-    colorFilter.addEventListener('change', applyFilters);
-    scentFilter.addEventListener('change', applyFilters);
-    priceFilter.addEventListener('change', applyFilters);
-    weightFilter.addEventListener('change', applyFilters);
-    clearFiltersBtn.addEventListener('click', clearFilters);
-    
     // Cerrar modales al hacer clic fuera
     window.addEventListener('click', function(event) {
-        if (event.target === productModal) {
-            closeProductModal();
+        if (event.target === customizationModal) {
+            closeCustomizationModal();
         }
         if (event.target === cartModal) {
             toggleCart();
@@ -262,74 +245,12 @@ function setupEventListeners() {
         });
     }
     
-    // Video placeholders (puedes reemplazar con videos reales)
+    // Video placeholders
     document.querySelectorAll('.video-placeholder').forEach(placeholder => {
         placeholder.addEventListener('click', function() {
             showNotification('Próximamente podrás ver videos de nuestro proceso artesanal', 'info');
         });
     });
-}
-
-// Aplicar filtros
-function applyFilters() {
-    filteredProducts = [...products];
-    
-    // Filtro por color
-    if (colorFilter.value !== 'all') {
-        filteredProducts = filteredProducts.filter(product => 
-            product.color === colorFilter.value
-        );
-    }
-    
-    // Filtro por aroma
-    if (scentFilter.value !== 'all') {
-        filteredProducts = filteredProducts.filter(product => 
-            product.scentCategory === scentFilter.value
-        );
-    }
-    
-    // Filtro por precio
-    if (priceFilter.value !== 'all') {
-        const [min, max] = priceFilter.value.split('-').map(Number);
-        if (max) {
-            filteredProducts = filteredProducts.filter(product => 
-                product.price >= min && product.price <= max
-            );
-        } else {
-            filteredProducts = filteredProducts.filter(product => 
-                product.price >= min
-            );
-        }
-    }
-    
-    // Filtro por peso
-    if (weightFilter.value !== 'all') {
-        const [min, max] = weightFilter.value.split('-').map(Number);
-        const productWeight = product => parseInt(product.weight);
-        
-        if (max) {
-            filteredProducts = filteredProducts.filter(product => 
-                productWeight(product) >= min && productWeight(product) <= max
-            );
-        } else {
-            filteredProducts = filteredProducts.filter(product => 
-                productWeight(product) >= min
-            );
-        }
-    }
-    
-    loadProducts();
-}
-
-// Limpiar filtros
-function clearFilters() {
-    colorFilter.value = 'all';
-    scentFilter.value = 'all';
-    priceFilter.value = 'all';
-    weightFilter.value = 'all';
-    searchInput.value = '';
-    filteredProducts = [...products];
-    loadProducts();
 }
 
 // Filtrar productos por búsqueda
@@ -338,7 +259,6 @@ function filterProducts() {
     filteredProducts = products.filter(product => {
         return (
             product.name.toLowerCase().includes(searchTerm) ||
-            product.scent.toLowerCase().includes(searchTerm) ||
             product.description.toLowerCase().includes(searchTerm)
         );
     });
@@ -350,129 +270,185 @@ function toggleCart() {
     cartModal.style.display = cartModal.style.display === 'block' ? 'none' : 'block';
 }
 
-// Mostrar detalles del producto
-function showProductDetails(productId) {
+// Mostrar modal de personalización
+function showCustomization(productId) {
     const product = products.find(p => p.id === productId);
     currentProduct = product;
     currentQuantity = 1;
+    selectedColor = colorOptions[0];
+    selectedScent = scentOptions[0];
     
-    productModalBody.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" class="product-detail-image">
-        <div class="product-details">
-            <div class="product-detail-info">
-                <h3>${product.name}</h3>
-                <div class="product-detail-price">$${product.price.toFixed(2)}</div>
-                
-                <div class="detail-item">
-                    <i class="fas fa-weight-hanging"></i>
-                    <span>Peso:</span>
-                    <span class="value">${product.weight}</span>
+    customizationBody.innerHTML = `
+        <div class="customization-preview">
+            <h3>Personaliza tu ${product.name}</h3>
+            <div class="preview-image" id="previewImage" style="background-color: ${colorOptions[0].color}">
+                <i class="fas fa-candle-holder"></i>
+            </div>
+            <p>Vista previa de tu vela personalizada</p>
+        </div>
+        
+        <div class="customization-options">
+            <div class="option-group">
+                <h4>Elige el Color</h4>
+                <div class="color-options">
+                    ${colorOptions.map((color, index) => `
+                        <div class="color-option ${index === 0 ? 'selected' : ''}" 
+                             style="background-color: ${color.color}"
+                             data-color='${JSON.stringify(color)}'
+                             onclick="selectColor(this)">
+                            <span class="color-name">${color.name}</span>
+                        </div>
+                    `).join('')}
                 </div>
-                
-                <div class="detail-item">
-                    <i class="fas fa-palette"></i>
-                    <span>Color:</span>
-                    <span class="value">${product.color}</span>
-                </div>
-                
-                <div class="detail-item">
-                    <i class="fas fa-wind"></i>
-                    <span>Aroma:</span>
-                    <span class="value">${product.scent}</span>
-                </div>
-                
-                <div class="detail-item">
-                    <i class="fas fa-cube"></i>
-                    <span>Materiales:</span>
-                    <span class="value">${product.materials}</span>
-                </div>
-                
-                <div class="detail-item">
-                    <i class="fas fa-clock"></i>
-                    <span>Tiempo de combustión:</span>
-                    <span class="value">${product.burnTime}</span>
-                </div>
-                
-                <div class="detail-item">
-                    <i class="fas fa-ruler-combined"></i>
-                    <span>Dimensiones:</span>
-                    <span class="value">${product.dimensions}</span>
-                </div>
-                
-                <!-- Selector de Cantidad -->
-                <div class="quantity-selector">
-                    <span>Cantidad:</span>
-                    <button class="quantity-btn" id="decreaseQuantity">-</button>
-                    <span class="quantity-display" id="quantityDisplay">${currentQuantity}</span>
-                    <button class="quantity-btn" id="increaseQuantity">+</button>
-                </div>
-                
-                <button class="btn btn-primary add-to-cart-detail" style="margin-top: 25px; width: 100%;">
-                    <i class="fas fa-cart-plus"></i> Añadir al Carrito - $${(product.price * currentQuantity).toFixed(2)}
-                </button>
             </div>
             
-            <div class="product-description">
-                <h4>Descripción</h4>
-                <p>${product.description}</p>
+            <div class="option-group">
+                <h4>Selecciona el Aroma</h4>
+                <div class="scent-options">
+                    ${scentOptions.map((scent, index) => `
+                        <div class="scent-option ${index === 0 ? 'selected' : ''}" 
+                             data-scent='${JSON.stringify(scent)}'
+                             onclick="selectScent(this)">
+                            <div class="scent-name">${scent.name}</div>
+                            <div class="scent-description">${scent.description}</div>
+                            <div class="scent-price">+ $${formatPrice(scent.price)} COP</div>
+                        </div>
+                    `).join('')}
+                </div>
             </div>
+        </div>
+        
+        <div class="quantity-selector">
+            <span>Cantidad:</span>
+            <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+            <span class="quantity-display" id="quantityDisplay">${currentQuantity}</span>
+            <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+        </div>
+        
+        <div class="customization-summary">
+            <h4>Resumen de tu Pedido</h4>
+            <div class="summary-item">
+                <span>${product.name}:</span>
+                <span>$${formatPrice(product.basePrice)} COP</span>
+            </div>
+            <div class="summary-item">
+                <span>Color ${selectedColor.name}:</span>
+                <span>Incluido</span>
+            </div>
+            <div class="summary-item">
+                <span>Aroma ${selectedScent.name}:</span>
+                <span>+ $${formatPrice(selectedScent.price)} COP</span>
+            </div>
+            <div class="summary-item">
+                <span>Cantidad (${currentQuantity}):</span>
+                <span>x${currentQuantity}</span>
+            </div>
+            <div class="summary-total">
+                <span>Total:</span>
+                <span id="summaryTotal">$${formatPrice(calculateTotal())} COP</span>
+            </div>
+            
+            <button class="btn btn-primary" onclick="addCustomizedToCart()" style="width: 100%; margin-top: 20px;">
+                <i class="fas fa-cart-plus"></i> Añadir al Carrito - $${formatPrice(calculateTotal())} COP
+            </button>
         </div>
     `;
     
-    productModal.style.display = 'block';
-    
-    // Agregar event listeners para el selector de cantidad
-    document.getElementById('decreaseQuantity').addEventListener('click', function() {
-        if (currentQuantity > 1) {
-            currentQuantity--;
-            updateQuantityDisplay();
-        }
-    });
-    
-    document.getElementById('increaseQuantity').addEventListener('click', function() {
-        currentQuantity++;
-        updateQuantityDisplay();
-    });
-    
-    // Agregar event listener al botón de añadir al carrito en el modal
-    document.querySelector('.add-to-cart-detail').addEventListener('click', function() {
-        addToCart(product, currentQuantity);
-        closeProductModal();
-    });
+    customizationModal.style.display = 'block';
 }
 
-// Actualizar display de cantidad
-function updateQuantityDisplay() {
-    const quantityDisplay = document.getElementById('quantityDisplay');
-    const addToCartBtn = document.querySelector('.add-to-cart-detail');
+// Seleccionar color
+function selectColor(element) {
+    // Remover selección anterior
+    document.querySelectorAll('.color-option').forEach(opt => {
+        opt.classList.remove('selected');
+    });
     
-    quantityDisplay.textContent = currentQuantity;
-    addToCartBtn.innerHTML = `<i class="fas fa-cart-plus"></i> Añadir al Carrito - $${(currentProduct.price * currentQuantity).toFixed(2)}`;
+    // Agregar selección nueva
+    element.classList.add('selected');
+    selectedColor = JSON.parse(element.getAttribute('data-color'));
+    
+    // Actualizar vista previa
+    const previewImage = document.getElementById('previewImage');
+    previewImage.style.backgroundColor = selectedColor.color;
+    
+    // Actualizar resumen
+    updateSummary();
 }
 
-// Cerrar modal de producto
-function closeProductModal() {
-    productModal.style.display = 'none';
+// Seleccionar aroma
+function selectScent(element) {
+    // Remover selección anterior
+    document.querySelectorAll('.scent-option').forEach(opt => {
+        opt.classList.remove('selected');
+    });
+    
+    // Agregar selección nueva
+    element.classList.add('selected');
+    selectedScent = JSON.parse(element.getAttribute('data-scent'));
+    
+    // Actualizar resumen
+    updateSummary();
 }
 
-// Añadir producto al carrito
-function addToCart(product, quantity = 1) {
-    const existingItem = cart.find(item => item.id === product.id);
-    
-    if (existingItem) {
-        existingItem.quantity += quantity;
-    } else {
-        cart.push({
-            ...product,
-            quantity: quantity
-        });
+// Cambiar cantidad
+function changeQuantity(change) {
+    const newQuantity = currentQuantity + change;
+    if (newQuantity >= 1 && newQuantity <= 10) {
+        currentQuantity = newQuantity;
+        document.getElementById('quantityDisplay').textContent = currentQuantity;
+        updateSummary();
     }
+}
+
+// Calcular total
+function calculateTotal() {
+    const basePrice = currentProduct.basePrice;
+    const scentPrice = selectedScent.price;
+    return (basePrice + scentPrice) * currentQuantity;
+}
+
+// Actualizar resumen
+function updateSummary() {
+    const summaryTotal = document.getElementById('summaryTotal');
+    const addToCartBtn = document.querySelector('.customization-summary .btn');
     
+    if (summaryTotal && addToCartBtn) {
+        const total = calculateTotal();
+        summaryTotal.textContent = `$${formatPrice(total)} COP`;
+        addToCartBtn.innerHTML = `<i class="fas fa-cart-plus"></i> Añadir al Carrito - $${formatPrice(total)} COP`;
+    }
+}
+
+// Añadir producto personalizado al carrito
+function addCustomizedToCart() {
+    const customizedProduct = {
+        id: Date.now(), // ID único para productos personalizados
+        baseId: currentProduct.id,
+        name: `${currentProduct.name} Personalizada`,
+        color: selectedColor.name,
+        scent: selectedScent.name,
+        basePrice: currentProduct.basePrice,
+        scentPrice: selectedScent.price,
+        quantity: currentQuantity,
+        totalPrice: calculateTotal(),
+        image: currentProduct.image
+    };
+    
+    cart.push(customizedProduct);
     updateCartUI();
     saveCartToLocalStorage();
     
     // Mostrar notificación
-    showNotification(`${product.name} (${quantity}) añadido al carrito`);
+    showNotification(`¡${currentProduct.name} personalizada añadida al carrito!`);
+    
+    // Cerrar modal
+    closeCustomizationModal();
+}
+
+// Cerrar modal de personalización
+function closeCustomizationModal() {
+    customizationModal.style.display = 'none';
 }
 
 // Eliminar producto del carrito
@@ -482,8 +458,7 @@ function removeFromCart(productId) {
     saveCartToLocalStorage();
     
     // Mostrar notificación
-    const product = products.find(p => p.id === productId);
-    showNotification(`${product.name} eliminado del carrito`);
+    showNotification('Producto eliminado del carrito');
 }
 
 // Actualizar interfaz del carrito
@@ -500,7 +475,7 @@ function updateCartUI() {
             <div class="empty-cart">
                 <i class="fas fa-shopping-cart"></i>
                 <p>Tu carrito está vacío</p>
-                <p style="margin-top: 10px; font-size: 0.9rem;">¡Explora nuestros productos y añade tus velas favoritas!</p>
+                <p style="margin-top: 10px; font-size: 0.9rem;">¡Personaliza tus velas favoritas y añádelas aquí!</p>
             </div>
         `;
     } else {
@@ -510,11 +485,11 @@ function updateCartUI() {
             cartItem.innerHTML = `
                 <div class="cart-item-info">
                     <h4>${item.name}</h4>
-                    <p>${item.scent}</p>
+                    <p>Color: ${item.color} | Aroma: ${item.scent}</p>
                     <p>Cantidad: ${item.quantity}</p>
                 </div>
                 <div class="cart-item-price">
-                    $${(item.price * item.quantity).toFixed(2)}
+                    $${formatPrice(item.totalPrice)} COP
                 </div>
                 <button class="remove-item" data-id="${item.id}" title="Eliminar del carrito">
                     <i class="fas fa-trash"></i>
@@ -533,8 +508,8 @@ function updateCartUI() {
     }
     
     // Actualizar total
-    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    cartTotal.textContent = total.toFixed(2);
+    const total = cart.reduce((sum, item) => sum + item.totalPrice, 0);
+    cartTotal.textContent = formatPrice(total);
 }
 
 // Guardar carrito en localStorage
@@ -545,26 +520,28 @@ function saveCartToLocalStorage() {
 // Finalizar compra
 function checkout() {
     if (cart.length === 0) {
-        showNotification('Tu carrito está vacío. ¡Añade algunos productos!', 'warning');
+        showNotification('Tu carrito está vacío. ¡Personaliza algunas velas!', 'warning');
         return;
     }
     
     // Crear mensaje de pedido
     let orderMessage = "¡Hola! Me gustaría realizar el siguiente pedido en PrettyCandles:\n\n";
     
-    cart.forEach(item => {
-        orderMessage += `🕯️ ${item.name}\n`;
-        orderMessage += `   Aroma: ${item.scent}\n`;
-        orderMessage += `   Cantidad: ${item.quantity}\n`;
-        orderMessage += `   Precio: $${(item.price * item.quantity).toFixed(2)}\n\n`;
+    cart.forEach((item, index) => {
+        orderMessage += `🕯️ *Vela ${index + 1}:*\n`;
+        orderMessage += `   • ${item.name}\n`;
+        orderMessage += `   • Color: ${item.color}\n`;
+        orderMessage += `   • Aroma: ${item.scent}\n`;
+        orderMessage += `   • Cantidad: ${item.quantity}\n`;
+        orderMessage += `   • Precio: $${formatPrice(item.totalPrice)} COP\n\n`;
     });
     
-    orderMessage += `💵 *Total: $${cartTotal.textContent}*\n\n`;
+    orderMessage += `💵 *Total del pedido: $${formatPrice(cart.reduce((sum, item) => sum + item.totalPrice, 0))} COP*\n\n`;
     orderMessage += "Por favor, contactarme para coordinar el pago y envío. ¡Gracias!";
     
     // Codificar el mensaje para WhatsApp
     const encodedMessage = encodeURIComponent(orderMessage);
-    const phoneNumber = "3147886481"; 
+    const phoneNumber = "573147886481"; 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
     // Abrir WhatsApp
